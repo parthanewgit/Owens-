@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <input type="button" id="btnGenerate" value="Populate DropDownList" onclick="PopulateDropDownList()" />
+    <hr />
+    <select id="ddlCustomers">
+    </select>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        function PopulateDropDownList() {
+            //Build an XML containing Customer records.
+            var xml = "<Customers>";
+            xml += "<Customer>";
+            xml += "<CustomerId>1</CustomerId><Name>John Hammond</Name><Country>United States</Country>";
+            xml += "</Customer>";
+            xml += "<Customer>";
+            xml += "<CustomerId>2</CustomerId><Name>Mudassar Khan</Name><Country>India</Country>";
+            xml += "</Customer>"
+            xml += "<Customer>";
+            xml += "<CustomerId>3</CustomerId><Name>Suzanne Mathews</Name><Country>France</Country>";
+            xml += "</Customer>";
+            xml += "<Customer>";
+            xml += "<CustomerId>4</CustomerId><Name>Robert Schidner</Name><Country>Russia</Country>";
+            xml += "</Customer>";
+            xml += "</Customers>";
+ 
+            var xmlDoc = $.parseXML(xml);
+            var customers = $(xmlDoc).find("Customer");
+            var ddl = $("#ddlCustomers");
+            customers.each(function () {
+               var option = $("<option />");
+ 
+                //Set Customer Name in Text part.
+                option.html($(this).find("Name").text());
+ 
+                //Set Customer CustomerId in Value part.
+                option.val($(this).find("CustomerId").text());
+ 
+                //Add the Option element to DropDownList.
+                ddl.append(option);
+            });
+        }
+    </script>
+</body>
+</html>
