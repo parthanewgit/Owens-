@@ -1,0 +1,200 @@
+2026-03-24 16:14:10 - root - INFO - Application startup
+2026-03-24 16:14:10 - root - INFO - OpenAI Model: gpt-4o
+2026-03-24 16:14:10 - root - INFO - Database: sqlite:///./recruitment.db
+2026-03-24 16:14:27 - root - INFO - Application startup
+2026-03-24 16:14:27 - root - INFO - OpenAI Model: gpt-4o
+2026-03-24 16:14:27 - root - INFO - Database: sqlite:///./recruitment.db
+2026-03-24 16:16:28 - root - INFO - Login attempt for user: admin
+2026-03-24 16:16:28 - root - INFO - Successful login: admin
+2026-03-24 16:53:41 - root - INFO - Login attempt for user: admin
+2026-03-24 16:53:41 - root - INFO - Successful login: admin
+2026-03-24 16:55:29 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 16:55:29 - root - INFO - Resume analysis request from admin
+2026-03-24 16:55:29 - app.services.parser_service - INFO - Parsing PDF: C:\Users\reshu\AppData\Local\Temp\tmplfflsb9d.pdf
+2026-03-24 16:55:29 - app.services.orchestration_service - INFO - Starting candidate analysis orchestration
+2026-03-24 16:55:29 - app.agents.resume_agent - INFO - Matching 1 resumes against job
+2026-03-24 16:55:29 - app.services.llm_service - INFO - LLM Request - Temperature: 0.2, Tokens: 500
+2026-03-24 16:55:32 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:55:32 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 16:55:32 - app.agents.resume_agent - INFO - Extracted 41 skills from job description
+2026-03-24 16:55:32 - app.services.embedding_service - INFO - Generating embedding for text: Job Title: DevOps Engineer
+Overview
+
+A DevOps Engi...
+2026-03-24 16:55:33 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-24 16:55:33 - app.agents.resume_agent - INFO - Processing resume: CATHERINE _TARK-devops-engineer.pdf
+2026-03-24 16:55:33 - app.services.llm_service - INFO - LLM Request - Temperature: 0.2, Tokens: 500
+2026-03-24 16:55:35 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:55:35 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 16:55:35 - app.services.embedding_service - INFO - Generating embedding for text: C A T H E R I N E   S T A R K
+A W S  D e v O p s  ...
+2026-03-24 16:55:35 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-24 16:55:35 - app.agents.resume_agent - INFO - Ranking complete: 1 candidates ranked
+2026-03-24 16:55:35 - app.services.orchestration_service - INFO - Analysis complete: 1 candidates
+2026-03-24 16:56:06 - root - INFO - Login attempt for user: admin
+2026-03-24 16:56:06 - root - INFO - Successful login: admin
+2026-03-24 16:58:53 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 16:58:53 - root - INFO - Resume analysis request from admin
+2026-03-24 16:58:53 - app.services.parser_service - INFO - Parsing DOCX: C:\Users\reshu\AppData\Local\Temp\tmpd10434ri.docx
+2026-03-24 16:58:54 - app.services.orchestration_service - INFO - Starting candidate analysis orchestration
+2026-03-24 16:58:54 - app.agents.resume_agent - INFO - Matching 1 resumes against job
+2026-03-24 16:58:54 - app.services.llm_service - INFO - LLM Request - Temperature: 0.2, Tokens: 500
+2026-03-24 16:58:56 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:58:56 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 16:58:56 - app.agents.resume_agent - INFO - Extracted 31 skills from job description
+2026-03-24 16:58:56 - app.agents.resume_agent - INFO - Processing resume: VidyasagarRonanki.docx
+2026-03-24 16:58:56 - app.services.llm_service - INFO - LLM Request - Temperature: 0.2, Tokens: 500
+2026-03-24 16:59:00 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 16:59:00 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 16:59:00 - app.services.embedding_service - INFO - Generating embedding for text:                                                   ...
+2026-03-24 16:59:01 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-24 16:59:01 - app.agents.resume_agent - INFO - Ranking complete: 1 candidates ranked
+2026-03-24 16:59:01 - app.services.orchestration_service - INFO - Analysis complete: 1 candidates
+2026-03-24 17:00:39 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:00:39 - root - INFO - Question generation request from admin
+2026-03-24 17:00:39 - app.services.orchestration_service - INFO - Starting question generation: 2 technical, 2 behavioral, 2 scenario
+2026-03-24 17:00:39 - app.agents.question_agent - INFO - Generating 6 mixed-type questions
+2026-03-24 17:00:39 - app.services.llm_service - INFO - LLM Request - Temperature: 0.7, Tokens: 2000
+2026-03-24 17:00:48 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:00:48 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:00:48 - app.agents.question_agent - INFO - Mixed-type question generation complete
+2026-03-24 17:00:48 - app.services.orchestration_service - INFO - Question generation complete
+2026-03-24 17:04:36 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:04:36 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:04:36 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:04:36 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:04:36 - app.agents.evaluation_agent - INFO - MCQ Evaluation: Correct - Score 10/10
+2026-03-24 17:04:36 - app.services.orchestration_service - INFO - Evaluation complete: Score 10/10
+2026-03-24 17:04:38 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:04:38 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:04:38 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:04:38 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:04:38 - app.services.llm_service - INFO - LLM Request - Temperature: 0.3, Tokens: 2000
+2026-03-24 17:04:43 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:04:43 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:04:43 - app.agents.evaluation_agent - INFO - Evaluation complete: Score 7/10
+2026-03-24 17:04:43 - app.services.orchestration_service - INFO - Evaluation complete: Score 7/10
+2026-03-24 17:04:45 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:04:45 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:04:45 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:04:45 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:04:45 - app.agents.evaluation_agent - INFO - MCQ Evaluation: Correct - Score 10/10
+2026-03-24 17:04:45 - app.services.orchestration_service - INFO - Evaluation complete: Score 10/10
+2026-03-24 17:04:47 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:04:47 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:04:47 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:04:47 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:04:47 - app.services.llm_service - INFO - LLM Request - Temperature: 0.3, Tokens: 2000
+2026-03-24 17:04:51 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:04:51 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:04:51 - app.agents.evaluation_agent - INFO - Evaluation complete: Score 2/10
+2026-03-24 17:04:51 - app.services.orchestration_service - INFO - Evaluation complete: Score 2/10
+2026-03-24 17:04:53 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:04:53 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:04:53 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:04:53 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:04:53 - app.agents.evaluation_agent - INFO - MCQ Evaluation: Correct - Score 10/10
+2026-03-24 17:04:53 - app.services.orchestration_service - INFO - Evaluation complete: Score 10/10
+2026-03-24 17:04:55 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:04:55 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:04:55 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:04:55 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:04:55 - app.services.llm_service - INFO - LLM Request - Temperature: 0.3, Tokens: 2000
+2026-03-24 17:05:02 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:05:02 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:05:02 - app.agents.evaluation_agent - INFO - Evaluation complete: Score 0/10
+2026-03-24 17:05:02 - app.services.orchestration_service - INFO - Evaluation complete: Score 0/10
+2026-03-24 17:09:35 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:09:35 - root - INFO - Learning plan generation request from admin
+2026-03-24 17:09:35 - app.services.orchestration_service - INFO - Generating learning roadmap for 4 skills
+2026-03-24 17:09:35 - app.agents.learning_agent - INFO - Generating roadmap for 4 missing skills
+2026-03-24 17:09:35 - app.services.llm_service - INFO - LLM Request - Temperature: 0.6, Tokens: 3000
+2026-03-24 17:09:43 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:09:43 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:09:43 - app.agents.learning_agent - INFO - Learning roadmap generation complete
+2026-03-24 17:09:43 - app.services.orchestration_service - INFO - Learning roadmap generation complete
+2026-03-24 17:35:20 - root - INFO - Login attempt for user: admin
+2026-03-24 17:35:20 - root - INFO - Successful login: admin
+2026-03-24 17:35:40 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:35:40 - root - INFO - Resume analysis request from admin
+2026-03-24 17:35:40 - app.services.parser_service - INFO - Parsing DOCX: C:\Users\reshu\AppData\Local\Temp\tmpw1eqnaql.docx
+2026-03-24 17:35:40 - app.services.orchestration_service - INFO - Starting candidate analysis orchestration
+2026-03-24 17:35:40 - app.agents.resume_agent - INFO - Matching 1 resumes against job
+2026-03-24 17:35:40 - app.services.llm_service - INFO - LLM Request - Temperature: 0.2, Tokens: 500
+2026-03-24 17:35:43 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:35:43 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:35:43 - app.agents.resume_agent - INFO - Extracted 41 skills from job description
+2026-03-24 17:35:43 - app.agents.resume_agent - INFO - Processing resume: VidyasagarRonanki.docx
+2026-03-24 17:35:43 - app.services.llm_service - INFO - LLM Request - Temperature: 0.2, Tokens: 500
+2026-03-24 17:35:46 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:35:46 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:35:46 - app.agents.resume_agent - INFO - Ranking complete: 1 candidates ranked
+2026-03-24 17:35:46 - app.services.orchestration_service - INFO - Analysis complete: 1 candidates
+2026-03-24 17:35:54 - root - INFO - Login attempt for user: admin
+2026-03-24 17:35:54 - root - INFO - Successful login: admin
+2026-03-24 17:36:01 - root - INFO - Login attempt for user: admin
+2026-03-24 17:36:01 - root - INFO - Successful login: admin
+2026-03-24 17:36:47 - root - INFO - Login attempt for user: admin
+2026-03-24 17:36:47 - root - INFO - Successful login: admin
+2026-03-24 17:37:20 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:37:20 - root - INFO - Resume analysis request from admin
+2026-03-24 17:37:20 - app.services.parser_service - INFO - Parsing DOCX: C:\Users\reshu\AppData\Local\Temp\tmpmcfiuqg8.docx
+2026-03-24 17:37:20 - app.services.orchestration_service - INFO - Starting candidate analysis orchestration
+2026-03-24 17:37:20 - app.agents.resume_agent - INFO - Matching 1 resumes against job
+2026-03-24 17:37:20 - app.services.llm_service - INFO - LLM Request - Temperature: 0.2, Tokens: 500
+2026-03-24 17:37:24 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:37:24 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:37:24 - app.agents.resume_agent - INFO - Extracted 36 skills from job description
+2026-03-24 17:37:24 - app.services.embedding_service - INFO - Generating embedding for text: Job Title: DevOps Engineer
+Overview
+
+A DevOps Engi...
+2026-03-24 17:37:24 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-03-24 17:37:24 - app.agents.resume_agent - INFO - Processing resume: VidyasagarRonanki.docx
+2026-03-24 17:37:24 - app.services.llm_service - INFO - LLM Request - Temperature: 0.2, Tokens: 500
+2026-03-24 17:37:27 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:37:27 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:37:27 - app.agents.resume_agent - INFO - Ranking complete: 1 candidates ranked
+2026-03-24 17:37:27 - app.services.orchestration_service - INFO - Analysis complete: 1 candidates
+2026-03-24 17:38:02 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:38:02 - root - INFO - Question generation request from admin
+2026-03-24 17:38:02 - app.services.orchestration_service - INFO - Starting question generation: 1 technical, 1 behavioral, 1 scenario
+2026-03-24 17:38:02 - app.agents.question_agent - INFO - Generating 3 mixed-type questions
+2026-03-24 17:38:02 - app.services.llm_service - INFO - LLM Request - Temperature: 0.7, Tokens: 2000
+2026-03-24 17:38:07 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:38:07 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:38:07 - app.agents.question_agent - INFO - Mixed-type question generation complete
+2026-03-24 17:38:07 - app.services.orchestration_service - INFO - Question generation complete
+2026-03-24 17:39:21 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:39:21 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:39:21 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:39:21 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:39:21 - app.agents.evaluation_agent - INFO - MCQ Evaluation: Correct - Score 10/10
+2026-03-24 17:39:21 - app.services.orchestration_service - INFO - Evaluation complete: Score 10/10
+2026-03-24 17:39:23 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:39:23 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:39:23 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:39:23 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:39:23 - app.services.llm_service - INFO - LLM Request - Temperature: 0.3, Tokens: 2000
+2026-03-24 17:39:27 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:39:27 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:39:27 - app.agents.evaluation_agent - INFO - Evaluation complete: Score 0/10
+2026-03-24 17:39:27 - app.services.orchestration_service - INFO - Evaluation complete: Score 0/10
+2026-03-24 17:39:29 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:39:29 - root - INFO - Answer evaluation request from admin
+2026-03-24 17:39:29 - app.services.orchestration_service - INFO - Starting answer evaluation
+2026-03-24 17:39:29 - app.agents.evaluation_agent - INFO - Starting answer evaluation
+2026-03-24 17:39:29 - app.services.llm_service - INFO - LLM Request - Temperature: 0.3, Tokens: 2000
+2026-03-24 17:39:33 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:39:33 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:39:33 - app.agents.evaluation_agent - INFO - Evaluation complete: Score 0/10
+2026-03-24 17:39:33 - app.services.orchestration_service - INFO - Evaluation complete: Score 0/10
+2026-03-24 17:40:30 - app.services.auth_service - INFO - Token verified for user: admin
+2026-03-24 17:40:30 - root - INFO - Learning plan generation request from admin
+2026-03-24 17:40:30 - app.services.orchestration_service - INFO - Generating learning roadmap for 3 skills
+2026-03-24 17:40:30 - app.agents.learning_agent - INFO - Generating roadmap for 3 missing skills
+2026-03-24 17:40:30 - app.services.llm_service - INFO - LLM Request - Temperature: 0.6, Tokens: 3000
+2026-03-24 17:40:36 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-24 17:40:36 - app.services.llm_service - INFO - LLM Response succeeded
+2026-03-24 17:40:36 - app.agents.learning_agent - INFO - Learning roadmap generation complete
+2026-03-24 17:40:36 - app.services.orchestration_service - INFO - Learning roadmap generation complete

@@ -1,0 +1,19 @@
+[server]
+# Allow external IP connections
+headless = true
+port = 8501
+# Allow connections from external IPs (0.0.0.0 means all interfaces)
+# This setting will be overridden by the command line if specified
+# To access from external IP: http://<your-ip>:8501
+
+[client]
+# Configuration for client-side settings
+showErrorDetails = true
+
+[theme]
+# Theme configuration
+primaryColor = "#FF6B6B"
+backgroundColor = "#F8F9FA"
+secondaryBackgroundColor = "#E8EAED"
+textColor = "#262730"
+font = "sans serif"
